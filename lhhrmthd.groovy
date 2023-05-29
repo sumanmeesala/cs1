@@ -1,3 +1,6 @@
+def fileLocation = getClass().protectionDomain.codeSource.location
+println fileLocation
+
 def desc(name) {
     description(This is an $name Job DSL job)
                }
