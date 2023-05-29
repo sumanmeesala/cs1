@@ -2,7 +2,7 @@ package hudson.cli;
 
 import jenkins.model.Jenkins;
 import hudson.model.ListView;
-import lhhrmthd;
+import lhhr/lhhrmthd.groovy;
 
 Jenkins jenkins = Jenkins.getInstance()
 
