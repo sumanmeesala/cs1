@@ -45,7 +45,7 @@ viewName.doAddJobToView(jobName)
 viewName.save()
 } 
 else {
-def newV = new ListView(viewName)
+newV = hudson.model.Hudson.instance.getView(viewName)
 def newJ = environment+'_cs2ndjob'
 newV.doAddJobToView(newJ) 
 newV.save()
