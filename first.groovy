@@ -41,7 +41,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
  println("view ' +$myView $viewName $jobName + ' job")
  }
  if (myView instanceof ListView && jobName != null) {
-myView.add(jobName) 
+myView.doAddJobToView(jobName) 
 myView.save()
 
 }    
