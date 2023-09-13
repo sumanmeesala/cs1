@@ -42,6 +42,6 @@ def myView = jenkins.getView(existingView)
 println("job ' + $myView $existingView $viewName+ ' created-3.")
 def job = jenkins.getItem(jobName)
 println("job ' + $job $jobName+ ' created-4.")
-viewName.add(jobName)
+viewName.doAddJobToView(jobName)
 
 
