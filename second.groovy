@@ -40,10 +40,10 @@ matrixJob(jobName) {
 myView = hudson.model.Hudson.instance.getView(viewName)
  println("view ' +$myView $viewName $jobName + ' job")
  }
-  if (viewName instanceof ListView && jobName != null) {
+  //if (viewName instanceof ListView && jobName != null) {
 myView.add(jobName) 
 myView.save()
-}
+//}
    
 
 jenkins.save()
