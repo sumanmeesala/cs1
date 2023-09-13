@@ -36,10 +36,12 @@ matrixJob(jobName) {
 
 
           println("job ' + $jobName + ' created-2.")
-                  
-}
-def job = jenkins.getItem(jobName)
-println("job ' + $job $jobName+ ' created-4.")
-viewName.add(jobName)
+              
+myView = hudson.model.Hudson.instance.getView(viewName)
+myView.doAddJobToView(jobName) 
+jenkins.save()
+}    
+
+
 
 
