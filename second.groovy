@@ -45,6 +45,9 @@ myView.doAddJobToView(jobName)
 myView.save()
 }
    
-
+  if (viewName instanceof ListView && jobName != null) {
+viewName.doAddJobToView(jobName) 
+viewName.save()
+}
 jenkins.save()
 
