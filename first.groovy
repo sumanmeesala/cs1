@@ -42,8 +42,8 @@ myView = hudson.model.Hudson.instance.getView(viewName)
  }
  
   if (viewName instanceof ListView && jobName != null) {
-viewName.doAddJobToView(jobName) 
-viewName.save()
+myView.doAddJobToView(jobName) 
+myView.save()
 } 
 jenkins.save()
 
