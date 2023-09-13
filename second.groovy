@@ -44,6 +44,12 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 viewName.doAddJobToView(jobName) 
 viewName.save()
 } 
+else {
+def newV = environment+'_csJobs'
+def newJ = environment+'_cs2ndjob'
+newV.doAddJobToView(newJ) 
+newV.save()
+}
 jenkins.save()
 
 
