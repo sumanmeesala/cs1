@@ -47,7 +47,7 @@ viewName.save()
 } 
 else {
 newV = hudson.model.Hudson.instance.getView(viewName)
-def newJ = environment+'_cs2ndjob'
+def newJ = environment+'_cs1stjob'
 newV.doAddJobToView(newJ) 
 newV.save()
 }
