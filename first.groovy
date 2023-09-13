@@ -41,7 +41,7 @@ myView = hudson.model.Hudson.instance.getView(viewName)
 
 }    
 
-myView.add(jobName) 
+myView.hudson.model.TopLevelItem.add(jobName) 
 jenkins.save()
 
 
