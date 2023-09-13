@@ -46,7 +46,7 @@ viewName.doAddJobToView(jobName)
 viewName.save()
 } 
 else {
-def newV = environment+'_csJobs'
+def newV = new ListView(viewName)
 def newJ = environment+'_cs2ndjob'
 newV.doAddJobToView(newJ) 
 newV.save()
