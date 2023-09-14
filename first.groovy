@@ -48,7 +48,8 @@ viewName.save()
 } 
 else {
 newV = hudson.model.Hudson.instance.getView(viewName)
-def newJ = environment+'_cs1stjob'
+
+def newJ = jenkins.getItem(jobName)
    println("job ' + $viewName $newV $newJ $jobName+ ' adding -4.")
 viewName.doAddJobToView(newJ) 
 viewName.save()
