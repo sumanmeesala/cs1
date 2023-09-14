@@ -42,12 +42,14 @@ myView = hudson.model.Hudson.instance.getView(viewName)
  
  
   if (viewName instanceof ListView && jobName != null) {
+   println("job ' + $viewName $jobName + ' adding -3.")
 viewName.doAddJobToView(jobName) 
 viewName.save()
 } 
 else {
 newV = hudson.model.Hudson.instance.getView(viewName)
 def newJ = environment+'_cs1stjob'
+   println("job ' + $newV $newJ + ' adding -4.")
 newV.doAddJobToView(newJ) 
 newV.save()
 }
