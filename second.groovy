@@ -50,7 +50,7 @@ newV = hudson.model.Hudson.instance.getView(viewName)
 
 def newJ = jenkins.getItem(jobName)
    println("job ' + $viewName $newV $newJ $jobName+ ' adding -4.")
-viewName.doAddJobToView(newJ) 
+newV.add(newJ) 
 viewName.save()
 }
 jenkins.save()
